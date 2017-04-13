@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.inner-circle {
+    background: #ccc;
+    width: 400px;
+    height: 400px;
+    line-height: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    border-radius: 50%;
+    border: 60px solid white;
+    position: relative;
+    color: #143c98;
+}
+
+.inner-circle:before {
+    content: ' ';
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    background: #cccccc;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
