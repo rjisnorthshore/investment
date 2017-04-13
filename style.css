@@ -10,6 +10,11 @@ body {
     font-family: sans-serif;
 }
 
+.container {
+    position: relative;
+    margin: auto;
+}
+
 .inner-circle {
     background: #ccc;
     width: 400px;
@@ -22,6 +27,7 @@ body {
     border: 60px solid white;
     position: relative;
     color: #143c98;
+    font-weight: bold;
 }
 
 .inner-circle:before {
@@ -35,4 +41,62 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
+}
+
+.circle {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    background: #eee;
+    position: absolute;
+    border-radius: 50%;
+    color: #143c98;
+    border: 4px solid transparent;
+    transition: border-color ease .25s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.circle span {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.circle:hover {
+    border-color: #143c98;
+}
+
+.circle--top {
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle--top-right {
+    top: 50px;
+    right: -60px;
+}
+
+.circle--bottom-right {
+    right: -50px;
+    bottom: 50px;
+}
+
+.circle--bottom {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -90px;
+}
+
+.circle--bottom-left {
+    left: -50px;
+    bottom: 50px;
+}
+
+.circle--top-left {
+    top: 50px;
+    left: -60px;
 }
