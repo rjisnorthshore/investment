@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    font-family: sans-serif;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -16,7 +16,11 @@ body {
 }
 
 .inner-circle {
-    background: #ccc;
+    background: rgb(254,254,254);
+    background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(155,155,154,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(155,155,154,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,rgba(155,155,154,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#9b9b9a',GradientType=0 );
     width: 400px;
     height: 400px;
     line-height: 400px;
@@ -26,7 +30,7 @@ body {
     border-radius: 50%;
     border: 60px solid white;
     position: relative;
-    color: #143c98;
+    color: #002d62;
     font-weight: bold;
 }
 
@@ -35,7 +39,7 @@ body {
     position: absolute;
     width: 580px;
     height: 580px;
-    background: #cccccc;
+    background: #b3b2b2;
     z-index: -1;
     left: 50%;
     top: 50%;
@@ -49,15 +53,19 @@ body {
     align-items: center;
     width: 150px;
     text-align: center;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    background: #eee;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background: rgb(254,254,254);
+    background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(155,155,154,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(155,155,154,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,rgba(155,155,154,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#9b9b9a',GradientType=0 );
     position: absolute;
     border-radius: 50%;
-    color: #143c98;
-    border: 4px solid transparent;
-    transition: border-color ease .25s;
+    color: #002d62;
+    transition: all ease .1s;
     font-weight: bold;
     font-size: 18px;
+    cursor: default;
 }
 
 .circle span {
@@ -66,7 +74,7 @@ body {
 }
 
 .circle:hover {
-    border-color: #143c98;
+    border: 4px solid;
 }
 
 .circle--top {
