@@ -108,3 +108,45 @@ body {
     top: 50px;
     left: -60px;
 }
+
+.content {
+    position: absolute;
+    width: 350px;
+    opacity: 0;
+    transition: all ease .25s;
+    pointer-events: none;
+}
+
+.circle:hover .content {
+    opacity: 1;
+}
+
+.content--top {
+    right: -370px;
+    top: -20px;
+}
+
+.content--top-right {
+    top: -80px;
+    right: -240px;
+}
+
+.content--bottom-right {
+    bottom: -80px;
+    left: 60px;
+}
+
+.content--bottom {
+    bottom: 0;
+    right: -380px;
+}
+
+.content--bottom-left {
+    bottom: -80px;
+    left: -260px;
+}
+
+.content--top-left {
+    top: -80px;
+    left: -240px;   
+}
