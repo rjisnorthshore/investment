@@ -143,18 +143,18 @@ body {
     top: -80px;
     right: -180px;
     width: 240px;
-    text-align: right;
+    text-align: left;
 }
 
 .content--bottom-right {
-    bottom: -100px;
+    bottom: -60px;
     left: 60px;
     width: 270px;
 }
 
 .content--bottom {
     bottom: 0;
-    right: -380px;
+    right: -340px;
 }
 
 .content--bottom-left {
